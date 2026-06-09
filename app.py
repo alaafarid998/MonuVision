@@ -24,7 +24,10 @@ KB_PATH    = os.path.join(BASE_DIR, "monuments_knowledge_base.json")
 CONFIG_PATH    = os.path.join(BASE_DIR, "config.json")
 IMG_SIZE   = (224, 224)
 TTS_VOICE  = "en-GB-SoniaNeural"
-GROQ_API_KEY = CONFIG_PATH['GROQ_API_KEY']
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    GROQ = f.read()
+    GROQ = json.loads(GROQ)
+GROQ_API_KEY = GROQ["GROQ_API_KEY"]
 
 CLASS_NAMES = [
     'Ahmose I', 'Akhenaten', 'Al-Azhar Mosque', 'Al-Muizz Street',

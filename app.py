@@ -24,6 +24,7 @@ KB_PATH    = os.path.join(BASE_DIR, "monuments_knowledge_base.json")
 CONFIG_PATH    = os.path.join(BASE_DIR, "config.json")
 IMG_SIZE   = (224, 224)
 TTS_VOICE  = "en-GB-SoniaNeural"
+
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     GROQ = f.read()
     GROQ = json.loads(GROQ)

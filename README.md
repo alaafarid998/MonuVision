@@ -20,7 +20,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Then open http://localhost:8501 in your browser.
+Then open http://localhost:8501.
 
 ## Usage
 1. **Upload** an image or **take a photo** with your webcam/phone
@@ -30,3 +30,9 @@ Then open http://localhost:8501 in your browser.
    - Generate ~100-word narration via Groq (Llama 3.1 8B)
    - Convert narration to MP3 via Edge-TTS
    - Auto-play the audio + offer a download button
+
+## Contributer
+- Alaa Farid
+- Nadia Mostafa
+- Aliaa Nasr
+- Farida Essam 
